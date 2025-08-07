@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Real Life Events Work - American Speed Dating Tour</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-800 bg-slate-50">
+
+     <header id="main-header">
+    <nav class="relative">
+        <a href="index.html" class="flex items-center gap-2 z-10">
+            <img src="images/android-chrome-512x512.png" alt="ASD Tour Logo" class="w-8 h-8 rounded-md">
+            <span class="logo-link text-2xl md:text-3xl font-bold hidden md:inline">ASD Tour</span>
+        </a>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden">
+             <a href="index.html" class="logo-link text-2xl font-bold">ASD Tour</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="events.html">Events</a>
+            
+            <div class="relative group dropdown-container">
+                <a href="locations.html" class="inline-flex items-center space-x-1">
+                    <span>Locations</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="locations-dropdown" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul id="locations-list">
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group dropdown-container">
+                <a href="about.html" class="inline-flex items-center space-x-1">
+                    <span>About Us</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="about.html#story" class="dropdown-link">The ASD Tour Story</a></li>
+                            <li><a href="about.html#algorithm" class="dropdown-link">Our Algorithm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group dropdown-container">
+                <a href="services.html" class="inline-flex items-center space-x-1">
+                    <span>Services</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="real-life-events.html" class="dropdown-link">Real Life Events</a></li>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group dropdown-container">
+                <a href="#" class="inline-flex items-center space-x-1">
+                    <span>More</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="contact.html" class="dropdown-link">Contact Us</a></li>
+                            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex items-center z-10">
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" id="login-link" class="text-lg font-semibold">Login</a>
+                <a href="signup.html" id="signup-link" class="animated-button signup-button" style="text-decoration: none;"><div class="bg"></div><div class="wrap"><div class="content"><span class="char state-1"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span><span class="char state-2"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span></div></div></a>
+                <div id="user-name-display" class="text-lg font-semibold hidden"></div>
+                <button id="sign-out-button" class="hidden bg-red-500 text-white px-4 py-2 rounded-full">Sign Out</button>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="hamburger-button" class="hamburger">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div id="mobile-menu" class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <a href="index.html#events" class="mobile-menu-link">Events</a>
+            <a href="locations.html" class="mobile-menu-link">Locations</a>
+            <a href="about.html" class="mobile-menu-link">About Us</a>
+            <a href="services.html" class="mobile-menu-link">Services</a>
+            <a href="faq.html" class="mobile-menu-link">FAQ</a>
+            <a href="contact.html" class="mobile-menu-link">Contact Us</a>
+            
+            <div id="mobile-auth-links" class="mt-8 pt-8 border-t border-gray-700 flex flex-col items-center space-y-4">
+                <a href="login.html" class="mobile-menu-link">Login</a>
+                <a href="signup.html" class="bg-violet-600 text-white font-semibold px-8 py-3 rounded-full">Sign Up</a>
+            </div>
+            
+            <div id="mobile-user-info" class="hidden mt-8 pt-8 border-t border-gray-700 flex flex-col items-center space-y-4">
+                <div id="mobile-user-name" class="text-white text-xl font-semibold"></div>
+                <button id="mobile-sign-out-button" class="bg-red-500 text-white px-8 py-3 rounded-full mt-4">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">Experience a Real-Life Event</h1>
+                    <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Welcome to ASD Tour! 🎉 The first and only company to combine cloud-based matching with live speed dating events.</p>
+                </div>
+
+                <div class="relative aspect-video mb-16 rounded-lg overflow-hidden shadow-xl cursor-pointer group">
+                    <img src="" alt="Video of a live event" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                        <svg class="w-20 h-20 text-white opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 6V18L18 12L7 6Z"></path></svg>
+                    </div>
+                </div>
+                
+                <div class="prose lg:prose-xl max-w-none mb-16">
+                    <h2>What Makes Us Different?</h2>
+                    <p>ASD Tour is speed dating's cooler, more adventurous cousin. Instead of being cooped up in a back room, you're out in the fun part of the bar, meeting singles selected specifically for you. Your next matches are refined in real-time based on your live feedback. No more speed dating roulette—ASD Tour uses advanced algorithms to find your most compatible matches.</p>
+                </div>
+
+                <div class="bg-violet-50 border-l-4 border-violet-500 text-slate-800 p-8 rounded-lg mb-16 text-center">
+                    <p class="text-2xl md:text-3xl font-bold">The stats don't lie: a staggering 95% of attendees meet someone they're attracted to.</p>
+                    <p class="text-xl md:text-2xl mt-2">...and 90% score at least one 5-star mutual match!</p>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-900">How It Works on the Night</h2>
+                    <p class="text-lg text-slate-600 mt-2">You've got your ticket and your profile is set. Here’s what to expect at the event.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-violet-100 text-violet-700 p-4 rounded-full">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">1. Arrival & Check-in</h3>
+                            <p class="mt-1 text-slate-500">When you arrive, our friendly host will greet you. Simply sign in to your ASD Tour account on your phone and tap the 'I'm here' button to check in. It's that easy!</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-violet-100 text-violet-700 p-4 rounded-full">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">2. Your Curated Dates</h3>
+                            <p class="mt-1 text-slate-500">You'll get a notification on your phone for each 10-minute date, including their name, photo, and a meeting spot. Our algorithm runs dynamically to find your best matches in real-time.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-violet-100 text-violet-700 p-4 rounded-full">
+                             <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18C12.8 18 13.5 17.7 14.1 17.1L15.5 15.7L14.1 14.3L12.7 15.7C12.5 15.9 12.2 16 12 16C11.8 16 11.5 15.9 11.3 15.7L8.5 12.9C8.1 12.5 8.1 11.9 8.5 11.5L12.7 7.3C13.1 6.9 13.7 6.9 14.1 7.3L15.5 8.7L16.9 7.3L15.5 5.9C14.7 5.1 13.4 5.1 12.6 5.9L8.4 10.1C7.6 10.9 7.6 12.2 8.4 12.9L11.2 15.8C11.4 15.9 11.7 16 12 16C12.2 16 12.5 15.9 12.7 15.7L14.1 14.3L15.5 15.7L14.1 17.1C13.5 17.7 12.8 18 12 18ZM15.5 12.9C15.9 12.5 15.9 11.9 15.5 11.5L12.7 8.7L11.3 10.1L12.7 11.5C12.9 11.7 13 11.9 13 12.2C13 12.4 12.9 12.7 12.7 12.9L10.1 15.5L11.5 16.9L15.5 12.9Z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">3. Private Feedback</h3>
+                            <p class="mt-1 text-slate-500">After each date, you’ll privately rate the person you met. This secret feedback helps our algorithm find you even better matches throughout the night and for future events.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 bg-violet-100 text-violet-700 p-4 rounded-full">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 13C16 14.1 15.1 15 14 15C12.9 15 12 14.1 12 13C12 11.9 12.9 11 14 11C15.1 11 16 11.9 16 13ZM18 13C18 15.2 16.2 17 14 17C11.8 17 10 15.2 10 13C10 10.8 11.8 9 14 9C16.2 9 18 10.8 18 13ZM10 13C10 14.1 9.1 15 8 15C6.9 15 6 14.1 6 13C6 11.9 6.9 11 8 11C9.1 11 10 11.9 10 13ZM12 13C12 15.2 10.2 17 8 17C5.8 17 4 15.2 4 13C4 10.8 5.8 9 8 9C10.2 9 12 10.8 12 13Z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">4. Mingle & Connect</h3>
+                            <p class="mt-1 text-slate-500">Events last about 2.5 hours. The atmosphere is fantastic, and most people stay afterwards to mingle. You'll be able to message your mutual matches through our platform the next day!</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="mt-16 text-center">
+                    <a href="locations.html" class="cta-button bg-violet-600 text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-violet-700">
+                        Find an Event Near You
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <section id="sponsors" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Meet Our Sponsors</h2>
+                <p class="text-slate-600 mt-2 mb-12">We're proud to partner with these amazing companies.</p>
+                <div class="logo-carousel">
+                    <div class="logo-carousel-track">
+                       <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//redbull.png" alt="Sponsor 1" class="sponsor-logo">
+                        <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Match_logo_2021.png" alt="Sponsor 2" class="sponsor-logo">
+                        <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//netflix.png" alt="Sponsor 3" class="sponsor-logo">
+                        <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Instacart_Logo_Kale_PMS.png" alt="Sponsor 4" class="sponsor-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">American Speed Dating Tour</h3>
+                    <p class="text-sm">Real Dates, Real Connections.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#how-it-works" class="hover:text-white">How It Works</a></li>
+                        <li><a href="index.html#events" class="hover:text-white">Events</a></li>
+                        <li><a href="signup.html" class="hover:text-white">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></a>
+                        <a href="#" class="hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2.163c3.204,0,3.584,0.012,4.85,0.07c3.252,0.148,4.771,1.691,4.919,4.919c0.058,1.265,0.07,1.646,0.07,4.85s-0.012,3.584-0.07,4.85c-0.148,3.227-1.669,4.771-4.919,4.919c-1.266,0.058-1.646,0.07-4.85,0.07s-3.584-0.012-4.85-0.07c-3.252-0.148-4.771-1.691-4.919-4.919c-0.058-1.265-0.07-1.646-0.07-4.85s0.012-3.584,0.07-4.85c0.148-3.227,1.669-4.771,4.919-4.919C8.416,2.175,8.796,2.163,12,2.163 M12,0C8.74,0,8.333,0.014,7.053,0.072C2.695,0.272,0.273,2.69,0.073,7.052C0.014,8.333,0,8.74,0,12s0.014,3.667,0.072,4.947c0.2,4.358,2.618,6.78,6.98,6.98c1.281,0.058,1.687,0.072,4.947,0.072s3.667-0.014,4.947-0.072c4.354-0.2,6.782-2.618,6.979-6.98c0.059-1.28,0.073-1.687,0.073-4.947s-0.014-3.667-0.072-4.947C21.72,2.693,19.302,0.274,14.948,0.073C13.667,0.014,13.26,0,12,0L12,0Z M12,5.838c-3.403,0-6.162,2.759-6.162,6.162s2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162S15.403,5.838,12,5.838z M12,16.162c-2.209,0-4-1.79-4-4s1.791-4,4-4s4,1.79,4,4S14.209,16.162,12,16.162z M16.965,5.595c-0.623,0-1.128,0.505-1.128,1.128s0.505,1.128,1.128,1.128c0.623,0,1.128-0.505,1.128-1.128S17.588,5.595,16.965,5.595z"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-slate-800 text-sm">
+                <p>&copy; 2025 American Speed Dating Tour. All Rights Reserved. Made with ❤️ for real connections.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - American Speed Dating Tour</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-800 bg-slate-50">
+
+ <header id="main-header">
+    <nav class="relative">
+        <a href="index.html" class="flex items-center gap-2 z-10">
+            <img src="images/android-chrome-512x512.png" alt="ASD Tour Logo" class="w-8 h-8 rounded-md">
+            <span class="logo-link text-2xl md:text-3xl font-bold hidden md:inline">ASD Tour</span>
+        </a>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden">
+             <a href="index.html" class="logo-link text-2xl font-bold">ASD Tour</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="events.html">Events</a>
+            
+            <div class="relative group dropdown-container">
+                <a href="locations.html" class="inline-flex items-center space-x-1">
+                    <span>Locations</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="locations-dropdown" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul id="locations-list">
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group dropdown-container">
+                <a href="about.html" class="inline-flex items-center space-x-1">
+                    <span>About Us</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="about.html#story" class="dropdown-link">The ASD Tour Story</a></li>
+                            <li><a href="about.html#algorithm" class="dropdown-link">Our Algorithm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group dropdown-container">
+                <a href="services.html" class="inline-flex items-center space-x-1">
+                    <span>Services</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="real-life-events.html" class="dropdown-link">Real Life Events</a></li>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group dropdown-container">
+                <a href="#" class="inline-flex items-center space-x-1">
+                    <span>More</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="contact.html" class="dropdown-link">Contact Us</a></li>
+                            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex items-center z-10">
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" id="login-link" class="text-lg font-semibold">Login</a>
+                <a href="signup.html" id="signup-link" class="animated-button signup-button" style="text-decoration: none;"><div class="bg"></div><div class="wrap"><div class="content"><span class="char state-1"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span><span class="char state-2"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span></div></div></a>
+                <div id="user-name-display" class="text-lg font-semibold hidden"></div>
+                <button id="sign-out-button" class="hidden bg-red-500 text-white px-4 py-2 rounded-full">Sign Out</button>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="hamburger-button" class="hamburger">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+   
+    <main>
+        <div id="event-landing-content">
+            <section class="relative bg-slate-900 text-white py-20 md:py-32">
+                <div id="event-hero-image" class="absolute inset-0 w-full h-full bg-cover bg-center" style="opacity: 0.3;"></div>
+                <div class="container mx-auto px-6 text-center relative">
+                    <h1 id="event-title" class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Event Title</h1>
+                    <p id="event-subtitle" class="text-xl md:text-2xl text-slate-300 mb-8">The perfect way to meet your match.</p>
+                    <a id="get-ticket-btn-hero" href="#" class="cta-button bg-violet-600 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-violet-700 transition-transform hover:scale-105">Get Your Ticket</a>
+                </div>
+            </section>
+
+            <section class="py-16 md:py-24 bg-white">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <div class="mb-16">
+                        <div id="event-description" class="prose lg:prose-xl max-w-none text-slate-600">
+                            </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+                        <div class="grid md:grid-cols-3 gap-8 text-center">
+                            <div class="flex flex-col items-center p-4">
+                                <div class="bg-violet-100 text-violet-600 rounded-full h-20 w-20 flex items-center justify-center mb-4">
+                                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">1. Arrive & Check-In</h3>
+                                <p class="text-slate-600">Show up at the stylish venue and check in seamlessly with your phone.</p>
+                            </div>
+                            <div class="flex flex-col items-center p-4">
+                                <div class="bg-violet-100 text-violet-600 rounded-full h-20 w-20 flex items-center justify-center mb-4">
+                                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">2. Meet Your Matches</h3>
+                                <p class="text-slate-600">Our algorithm guides you through a series of fun, 8-10 minute dates.</p>
+                            </div>
+                            <div class="flex flex-col items-center p-4">
+                                <div class="bg-violet-100 text-violet-600 rounded-full h-20 w-20 flex items-center justify-center mb-4">
+                                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">3. Connect After</h3>
+                                <p class="text-slate-600">After the event, we process the matches. Our team will then contact you directly by email and phone to share your matches contact information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bg-slate-100 py-16 md:py-20">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold mb-4">Ready for a Great Date?</h2>
+                    <p id="event-cta-subtitle" class="text-slate-600 max-w-xl mx-auto mb-8">Spots are limited. Secure your ticket now!</p>
+                    <a id="get-ticket-btn-footer" href="#" class="cta-button bg-violet-600 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-violet-700 transition-transform hover:scale-105">Get Your Ticket</a>
+                </div>
+            </section>
+
+        </div>
+        <div id="event-not-found" class="hidden text-center py-24">
+            <h1 class="text-4xl font-bold">Event Not Found</h1>
+            <p class="text-slate-600 mt-4">We couldn't find the event you were looking for.</p>
+            <a href="events.html" class="cta-button mt-8 inline-block bg-violet-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-violet-700">View All Events</a>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center pt-8 mt-8 border-t border-slate-700">
+                 <p>&copy; 2025 American Speed Dating Tour. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+
+</body>
+</html>

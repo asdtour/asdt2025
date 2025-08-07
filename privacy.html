@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - American Speed Dating Tour</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for the active state in the side navigation */
+        .terms-nav a.active {
+            background-color: #f1eefb; /* A light violet */
+            color: #5b21b6; /* A deep violet */
+            border-left-color: #6d28d9;
+            font-weight: 600;
+        }
+        /* Offset for scrolling to account for sticky header */
+        .scroll-mt-24 {
+            scroll-margin-top: 6rem; /* 96px */
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-slate-50">
+
+ <header id="main-header">
+    <nav class="relative">
+        <a href="index.html" class="flex items-center gap-2 z-10">
+            <img src="images/android-chrome-512x512.png" alt="ASD Tour Logo" class="w-8 h-8 rounded-md">
+            <span class="logo-link text-2xl md:text-3xl font-bold hidden md:inline">ASD Tour</span>
+        </a>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden">
+             <a href="index.html" class="logo-link text-2xl font-bold">ASD Tour</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="events.html">Events</a>
+            
+            <div class="relative group dropdown-container">
+                <a href="locations.html" class="inline-flex items-center space-x-1">
+                    <span>Locations</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="locations-dropdown" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul id="locations-list">
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group dropdown-container">
+                <a href="about.html" class="inline-flex items-center space-x-1">
+                    <span>About Us</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="about.html#story" class="dropdown-link">The ASD Tour Story</a></li>
+                            <li><a href="about.html#algorithm" class="dropdown-link">Our Algorithm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group dropdown-container">
+                <a href="services.html" class="inline-flex items-center space-x-1">
+                    <span>Services</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="real-life-events.html" class="dropdown-link">Real Life Events</a></li>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group dropdown-container">
+                <a href="#" class="inline-flex items-center space-x-1">
+                    <span>More</span>
+                    <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="rounded-md bg-white ring-1 ring-black ring-opacity-5 py-1">
+                         <ul>
+                            <li><a href="contact.html" class="dropdown-link">Contact Us</a></li>
+                            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex items-center z-10">
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" id="login-link" class="text-lg font-semibold">Login</a>
+                <a href="signup.html" id="signup-link" class="animated-button signup-button" style="text-decoration: none;"><div class="bg"></div><div class="wrap"><div class="content"><span class="char state-1"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span><span class="char state-2"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span></div></div></a>
+                <div id="user-name-display" class="text-lg font-semibold hidden"></div>
+                <button id="sign-out-button" class="hidden bg-red-500 text-white px-4 py-2 rounded-full">Sign Out</button>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="hamburger-button" class="hamburger">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+   
+    <main>
+        <div class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="text-left lg:text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">Privacy Policy</h1>
+                    <p class="text-lg text-slate-500 mt-4">Last updated: July 6, 2025</p>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-4 lg:gap-12">
+                    <aside class="lg:col-span-1 mb-12 lg:mb-0">
+                        <nav class="lg:sticky lg:top-24">
+                            <ul class="terms-nav space-y-2">
+                                <li><a href="#section-intro" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Introduction</a></li>
+                                <li><a href="#section-collect" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Information We Collect</a></li>
+                                <li><a href="#section-use" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">How We Use Information</a></li>
+                                <li><a href="#section-protect" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Data Protection</a></li>
+                                <li><a href="#section-consent" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Your Consent</a></li>
+                                <li><a href="#section-changes" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Policy Changes</a></li>
+                                <li><a href="#section-contact" class="block p-3 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="lg:col-span-3 prose lg:prose-xl max-w-none space-y-12">
+                        
+                        <section id="section-intro" class="scroll-mt-24">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">1. Introduction</h2>
+                                    <p>American Speed Dating Tour is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by ASD Tour.</p>
+                                    <p>This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service"). By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our <a href="terms.html">Terms of Service</a>.</p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="section-collect" class="scroll-mt-24">
+                             <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">2. Information We Collect</h2>
+                                    <p>We collect information from you when you visit our service, register, place an order, subscribe to our newsletter, respond to a survey or fill out a form. This includes:</p>
+                                    <ul>
+                                        <li>Name / Username</li>
+                                        <li>Email Addresses</li>
+                                        <li>Age / Date of Birth</li>
+                                        <li>Profile Information for Matching</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="section-use" class="scroll-mt-24">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">3. How We Use Your Information</h2>
+                                    <p>Any of the information we collect from you may be used in one of the following ways:</p>
+                                    <ul>
+                                        <li>To personalize your experience (your information helps us to better respond to your individual needs)</li>
+                                        <li>To improve our website (we continually strive to improve our website offerings based on the information and feedback we receive from you)</li>
+                                        <li>To improve customer service (your information helps us to more effectively respond to your customer service requests and support needs)</li>
+                                        <li>To process transactions</li>
+                                        <li>To administer a contest, promotion, survey or other site feature</li>
+                                        <li>To send periodic emails</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                         <section id="section-protect" class="scroll-mt-24">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">4. How We Protect Your Information</h2>
+                                    <p>We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information. We never share your phone number or email address with your dates.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="section-consent" class="scroll-mt-24">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">5. Your Consent</h2>
+                                    <p>By using our site, you consent to our website's privacy policy.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="section-changes" class="scroll-mt-24">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 4l5 5M20 20l-5-5" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">6. Changes to our Privacy Policy</h2>
+                                    <p>If we decide to change our privacy policy, we will post those changes on this page. This policy was last modified on the date indicated at the top of this page.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="section-contact" class="scroll-mt-24">
+                           <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class="mt-0">7. Contact Us</h2>
+                                    <p>If there are any questions regarding this privacy policy, you may contact us using the information on our <a href="contact.html">Contact Page</a>.</p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="sponsors" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Meet Our Sponsors</h2>
+                <p class="text-slate-600 mt-2 mb-12">We're proud to partner with these amazing companies.</p>
+                <div class="logo-carousel">
+                    <div class="logo-carousel-track">
+                       <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//redbull.png" alt="Sponsor 1" class="sponsor-logo">
+                        <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Match_logo_2021.png" alt="Sponsor 2" class="sponsor-logo">
+                        <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//netflix.png" alt="Sponsor 3" class="sponsor-logo">
+                        <img src="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Instacart_Logo_Kale_PMS.png" alt="Sponsor 4" class="sponsor-logo">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">American Speed Dating Tour</h3>
+                    <p class="text-sm">Real Dates, Real Connections.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#how-it-works" class="hover:text-white">How It Works</a></li>
+                        <li><a href="index.html#events" class="hover:text-white">Events</a></li>
+                        <li><a href="signup.html" class="hover:text-white">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/asd_tour/#" class="hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 32 32" fill="currentColor">
+                                <path d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396-.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493-.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"></path>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/asd_tour?s=21" class="hover:text-white">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 32 32" fill="currentColor">
+                                <path d="M18.42,14.009L27.891,3h-2.244l-8.224,9.559L10.855,3H3.28l9.932,14.455L3.28,29h2.244l8.684-10.095,6.936,10.095h7.576l-10.301-14.991h0Zm-3.074,3.573l-1.006-1.439L6.333,4.69h3.447l6.462,9.243,1.006,1.439,8.4,12.015h-3.447l-6.854-9.804h0Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@asd_tour?_t=ZM-8yfAmYo6Rfk&_r=1" class="hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 32 32" fill="currentColor">
+                                <path d="M24.562,7.613c-1.508-.983-2.597-2.557-2.936-4.391-.073-.396-.114-.804-.114-1.221h-4.814l-.008,19.292c-.081,2.16-1.859,3.894-4.039,3.894-.677,0-1.315-.169-1.877-.465-1.288-.678-2.169-2.028-2.169-3.582,0-2.231,1.815-4.047,4.046-4.047,.417,0,.816,.069,1.194,.187v-4.914c-.391-.053-.788-.087-1.194-.087-4.886,0-8.86,3.975-8.86,8.86,0,2.998,1.498,5.65,3.783,7.254,1.439,1.01,3.19,1.606,5.078,1.606,4.886,0,8.86-3.975,8.86-8.86V11.357c1.888,1.355,4.201,2.154,6.697,2.154v-4.814c-1.345,0-2.597-.4-3.647-1.085Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-slate-800 text-sm">
+                <p>&copy; 2025 American Speed Dating Tour. All Rights Reserved. Made with ❤️ for real connections.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="icebreaker-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative modal-content">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">✨ AI Icebreakers</h3>
+            <div id="icebreaker-content">
+                </div>
+            <button id="regenerate-icebreakers-btn" class="mt-6 w-full cta-button bg-violet-600 text-white font-semibold px-5 py-3 rounded-lg hover:bg-violet-700">Get New Ideas</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <script src="auth.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

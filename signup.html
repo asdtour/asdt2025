@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - American Speed Dating Tour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hero-background">
+
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="w-full max-w-4xl glass-form-container grid md:grid-cols-2 shadow-2xl overflow-hidden">
+            
+            <div class="hidden md:flex flex-col justify-center p-12 bg-black bg-opacity-20">
+                <a href="index.html" class="text-4xl font-bold text-white mb-4">ASD Tour</a>
+                <h1 class="text-3xl font-bold text-white leading-tight">Find Your Connection.</h1>
+                <p class="text-violet-200 mt-4">Create an account to start your journey. Join exclusive, curated events and meet real people in your city.</p>
+            </div>
+
+            <div class="p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-white text-center mb-6">Create Your Account</h2>
+                <form id="signup-form" class="space-y-6">
+                    
+                    <div id="form-message" class="text-center text-sm font-medium p-3 rounded-md hidden"></div>
+
+                    <div class="space-y-4">
+                        <input id="name" name="name" type="text" required class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder="Full Name">
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder="Email address">
+                        <div class="grid grid-cols-2 gap-4">
+                           <input id="password" name="password" type="password" required class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder="Password">
+                           <input id="confirm-password" name="confirm-password" type="password" required class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder="Confirm Password">
+                        </div>
+                    </div>
+
+                    <hr class="border-gray-700">
+
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input id="age" name="age" type="number" required min="18" max="99" class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder="Your Age">
+                            <input id="pronouns" name="pronouns" type="text" class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder="Pronouns (e.g., she/her)">
+                        </div>
+                        <div>
+    <select id="city-select" name="city" required class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500">
+        <option value="" disabled selected>Select Your City...</option>
+        <!-- Options will be populated by auth.js -->
+    </select>
+</div>
+                         <div class="grid grid-cols-2 gap-4">
+                            <select id="gender" name="gender" class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500">
+                                <option disabled selected>Gender.</option>
+                                <option>Cisgender Woman</option>
+                                <option>Cisgender Man</option>
+                                <option>Transgender Man</option>
+                                <option>Transgender Woman</option>
+                                <option>Non-Binary</option>
+                                <option>Prefer Not to Say</option>
+                            </select>
+                            <select id="seeking" name="seeking" class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500">
+                                <option disabled selected>Interested In...</option>
+                                <option>Cisgender Women</option>
+                                <option>Cisgender Men</option>
+                                <option>Transgender Men</option>
+                                <option>Transgender Women</option>
+                                <option>Non-Binary People</option>
+                                
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Interested Age Range</label>
+                            <div class="flex items-center space-x-4">
+                                <select id="age-min-interest" name="age-min-interest" class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"></select>
+                                <span class="text-gray-400">to</span>
+                                <select id="age-max-interest" name="age-max-interest" class="w-full px-4 py-2 bg-gray-900 bg-opacity-50 border border-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="submit-button" type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 focus:ring-offset-gray-900 transition-colors duration-300 disabled:bg-violet-400">
+                           <span class="button-text">Create Account</span>
+                           <svg class="animate-spin h-5 w-5 ml-3 hidden button-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                           </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <script src="auth.js"></script>
+
+</body>
+</html>
