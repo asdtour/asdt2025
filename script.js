@@ -129,10 +129,6 @@ const cityStripeLinks = {
     "https://buy.stripe.com/14AbJ118UfL2coxeQf0oO3G", "https://buy.stripe.com/fZu28r2cY8iA6097nN0oO3L", "https://buy.stripe.com/5kQ14n8Bm6as9cl23t0oO3K", "https://buy.stripe.com/9B6aEX6tedCUcox37x0oO2y", "https://buy.stripe.com/9B6bJ14l67ew0FPdMb0oO2z", "https://buy.stripe.com/fZucN518U6as6097nN0oO2A", "https://buy.stripe.com/7sYaEXaJu0Q8fAJgYn0oO2B", "https://buy.stripe.com/cNi5kDeZK8iA4W5eQf0oO2C",
     "https://buy.stripe.com/00waEX04Q9mEfAJ8rR0oO3H", "https://buy.stripe.com/fZu6oH18U0Q8bkt9vV0oO3J", "https://buy.stripe.com/dRmcN58BmaqI0FP0Zp0oO3I", "https://buy.stripe.com/8x29AT6te8iAgEN7nN0oO2H", "https://buy.stripe.com/28E9AT4l68iAbkt7nN0oO2G", "https://buy.stripe.com/eVq9ATdVGaqIgEN5fF0oO2F", "https://buy.stripe.com/7sY4gz04QcyQ3S1fUj0oO2E", "https://buy.stripe.com/4gM9AT2cY6as9cl0Zp0oO2D"
 ],
-    "Washington": [
-    "https://buy.stripe.com/eVq5kD7xigP688hfUj0oO18", "https://buy.stripe.com/6oU28raJueGYfAJ37x0oO19", "https://buy.stripe.com/9B65kD04QcyQ9cl0Zp0oO1a", "https://buy.stripe.com/9B64gz04QfL274d0Zp0oO1b", "https://buy.stripe.com/6oUdR99FqaqI9clgYn0oO1c", "https://buy.stripe.com/9B600jaJu9mE9cldMb0oO1d", "https://buy.stripe.com/cNi6oHeZKfL2609dMb0oO1e", "https://buy.stripe.com/6oUaEX7xibuM3S15fF0oO1f",
-    "https://buy.stripe.com/7sY6oHdVGfL288hfUj0oO1g", "https://buy.stripe.com/5kQfZh18U1UcfAJazZ0oO1h", "https://buy.stripe.com/9B6bJ118UfL2coxgYn0oO1i", "https://buy.stripe.com/cNifZh9FqcyQgEN6jJ0oO1j", "https://buy.stripe.com/fZu8wP7xiaqI4W5gYn0oO1k", "https://buy.stripe.com/eVqdR94l656o9cleQf0oO1l", "https://buy.stripe.com/6oU7sL6tedCUdsB5fF0oO1m", "https://buy.stripe.com/bJe4gz3h20Q89cl23t0oO1n"
-],
     "Virginia Beach": [
     "https://buy.stripe.com/3cI28r3h21Uccox8rR0oO3M", "https://buy.stripe.com/28EfZh3h22Yg88hfUj0oO3N", "https://buy.stripe.com/fZu6oHg3O7ew1JT0Zp0oO3O", "https://buy.stripe.com/cNifZhg3O56o3S1fUj0oO2N", "https://buy.stripe.com/eVq00j04QeGYfAJ8rR0oO2O", "https://buy.stripe.com/8x28wP9Fq8iAbktdMb0oO2P", "https://buy.stripe.com/9B6eVd18U42kdsBfUj0oO2Q", "https://buy.stripe.com/dRmcN504QfL23S1azZ0oO2R",
     "https://buy.stripe.com/5kQ28r7xi2Ygbkt4bB0oO3P", "https://buy.stripe.com/3cI28rdVG56ocox23t0oO3Q", "https://buy.stripe.com/cNiaEXg3OgP6bktfUj0oO3R", "https://buy.stripe.com/28EeVdbNy6as609bE30oO3S", "https://buy.stripe.com/14A00j2cYfL2gEN8rR0oO2L", "https://buy.stripe.com/00w14nbNy6ascox4bB0oO2K", "https://buy.stripe.com/3cI5kD9FqcyQ3S123t0oO2J", "https://buy.stripe.com/aFa8wP5pa6ascox0Zp0oO2I"
@@ -208,10 +204,6 @@ const cityStripeLinks = {
 "New Orleans": [
     "https://buy.stripe.com/4gM9AT04Q42k4W5cI70oN1G", "https://buy.stripe.com/14A6oH5pa1UccoxgYn0oN1H", "https://buy.stripe.com/4gM3cv2cY6as88hcI70oN1I", "https://buy.stripe.com/cNifZhg3OgP6ewF37x0oN1J", "https://buy.stripe.com/14A00j9Fq6ascoxfUj0oN1K", "https://buy.stripe.com/4gM9ATdVGfL2bktazZ0oN1L", "https://buy.stripe.com/4gM00j7xifL288heQf0oN1M", "https://buy.stripe.com/14A8wP3h242kdsB7nN0oN1N",
     "https://buy.stripe.com/7sY5kD5pa56oagp8rR0oN1O", "https://buy.stripe.com/8x27sL6te8iA3S18rR0oN1P", "https://buy.stripe.com/fZu6oHbNydCUgENcI70oN1Q", "https://buy.stripe.com/28E28rbNyeGY9clfUj0oN1R", "https://buy.stripe.com/cNifZh6te8iA88hbE30oN1S", "https://buy.stripe.com/3cI00jeZKcyQ0FPeQf0oN1T", "https://buy.stripe.com/aFa3cv3h2cyQ2NXeQf0oN1U", "https://buy.stripe.com/6oU28r9FqbuMgEN4bB0oN1V"
-],
-"Washington": [
-    "https://buy.stripe.com/eVq5kD7xigP688hfUj0oO18", "https://buy.stripe.com/6oU28raJueGYfAJ37x0oO19", "https://buy.stripe.com/9B65kD04QcyQ9cl0Zp0oO1a", "https://buy.stripe.com/9B64gz04QfL274d0Zp0oO1b", "https://buy.stripe.com/6oUdR99FqaqI9clgYn0oO1c", "https://buy.stripe.com/9B600jaJu9mE9cldMb0oO1d", "https://buy.stripe.com/cNi6oHeZKfL2609dMb0oO1e", "https://buy.stripe.com/6oUaEX7xibuM3S15fF0oO1f",
-    "https://buy.stripe.com/7sY6oHdVGfL288hfUj0oO1g", "https://buy.stripe.com/5kQfZh18U1UcfAJazZ0oO1h", "https://buy.stripe.com/9B6bJ118UfL2coxgYn0oO1i", "https://buy.stripe.com/cNifZh9FqcyQgEN6jJ0oO1j", "https://buy.stripe.com/fZu8wP7xiaqI4W5gYn0oO1k", "https://buy.stripe.com/eVqdR94l656o9cleQf0oO1l", "https://buy.stripe.com/6oU7sL6tedCUdsB5fF0oO1m", "https://buy.stripe.com/bJe4gz3h20Q89cl23t0oO1n"
 ],
 "Newark": [
     "https://buy.stripe.com/bJedR93h256o88hgYn0oO1o", "https://buy.stripe.com/eVqbJ104QgP62NX7nN0oO1p", "https://buy.stripe.com/cNi5kD4l69mE6095fF0oO1q", "https://buy.stripe.com/eVq28rdVG6as9clfUj0oO1r", "https://buy.stripe.com/00wfZhcRC56o0FP6jJ0oO1s", "https://buy.stripe.com/eVq14ncRC8iAagp7nN0oO1t", "https://buy.stripe.com/9B6bJ104Q1UcgEN9vV0oO1u", "https://buy.stripe.com/14AeVd4l66as1JTbE30oO1v",
@@ -397,7 +389,8 @@ const cityImageUrls = {
     // West
     "Portland": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//portland.jpg?width=400",
     "Seattle": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Seattle.jpg?width=400",
-    "Denver": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Las%20Vegas%20(1).webp?width=400",
+    "Denver": "https://wsrv.nl/?url=https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg&w=400&h=400&fit=cover&q=80&output=webp",
+    "Las Vegas": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/Las%20Vegas%20(1).webp?width=400",
     "Henderson": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//henderson.webp?width=400",
     "Boise City": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Boise%20City.jpg?width=400",
 
@@ -409,7 +402,6 @@ const cityImageUrls = {
     "Jackson": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Jackson.jpg?width=400",
     "Little Rock": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Little%20Rock.jpg?width=400",
     "New Orleans": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//New%20Orleans.jpg?width=400",
-     "Las Vegas": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/Las%20Vegas%20(1).webp?width=400",
 
     // East Coast
     "Washington": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Washington.jpg?width=400",
@@ -1109,6 +1101,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.getElementById('hero-carousel')) { 
             setupHomePageEvents();
             startHeroCarousel();
+            if (elements.stateFilter) {
+                populateStateFilter();
+                elements.stateFilter.addEventListener('change', filterAndRender);
+            }
         }
         
         if (document.getElementById('location-grid')) {
