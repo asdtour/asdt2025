@@ -226,3 +226,58 @@ async function signOut() {
         window.location.href = 'index.html';
     }
 }
+
+// =================================================================================================
+// === UI MANAGEMENT (Handles header on ALL pages) =================================================
+// =================================================================================================
+document.addEventListener('DOMContentLoaded', () => {
+    supabaseClient.auth.onAuthStateChange(async (event, session) => {
+        const loginLink = document.getElementById('login-link');
+        const signupLink = document.getElementById('signup-link');
+        const userNameDisplay = document.getElementById('user-name-display');
+        const signOutButton = document.getElementById('sign-out-button');
+        const mobileAuthLinks = document.getElementById('mobile-auth-links');
+        const mobileUserInfo = document.getElementById('mobile-user-info');
+        const mobileUserName = document.getElementById('mobile-user-name');
+        const mobileSignOutButton = document.getElementById('mobile-sign-out-button');
+
+        // Only run this UI code if the header elements exist on the page
+        if (loginLink && signupLink && userNameDisplay && signOutButton) {
+            if (session && session.user) {
+                const user = session.user;
+                const { data, error } = await supabaseClient
+                    .from('users')
+                    .select('name, city')
+                    .eq('id', user.id)
+                    .single();
+
+                const displayName = data?.name || 'User';
+
+                userNameDisplay.textContent = `Welcome, ${displayName}`;
+                loginLink.classList.add('hidden');
+                signupLink.classList.add('hidden');
+                userNameDisplay.classList.remove('hidden');
+                signOutButton.classList.remove('hidden');
+                signOutButton.addEventListener('click', signOut);
+
+                if (mobileUserName && mobileAuthLinks && mobileUserInfo && mobileSignOutButton) {
+                    mobileUserName.textContent = `Welcome, ${displayName}`;
+                    mobileAuthLinks.classList.add('hidden');
+                    mobileUserInfo.classList.remove('hidden');
+                    mobileSignOutButton.addEventListener('click', signOut);
+                }
+                
+            } else {
+                loginLink.classList.remove('hidden');
+                signupLink.classList.remove('hidden');
+                userNameDisplay.classList.add('hidden');
+                signOutButton.classList.add('hidden');
+
+                if (mobileAuthLinks && mobileUserInfo) {
+                    mobileAuthLinks.classList.remove('hidden');
+                    mobileUserInfo.classList.add('hidden');
+                }
+            }
+        }
+    });
+});
