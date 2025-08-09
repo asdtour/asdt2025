@@ -12,6 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add this new style for two columns on mobile */
+        @media (max-width: 767px) {
+            .mobile-two-columns {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1rem; /* Adjust gap for smaller screens if needed */
+            }
+            .location-card {
+                max-width: 100%; /* Allow cards to fill the column */
+                height: 200px; /* Adjust height for mobile if needed */
+            }
+            .location-card h3 {
+                font-size: 1.25rem; /* Adjust font size for mobile */
+            }
+        }
+    </style>
 </head>
 <body class="text-slate-800 bg-slate-50">
 
@@ -146,7 +162,7 @@
                     </div>
                 </div>
 
-                <div id="location-grid">
+                <div id="location-grid" class="mobile-two-columns">
                     </div>
             </div>
         </div>
