@@ -996,51 +996,54 @@ function setupEventDetailsPage() {
     }
 }
 
-function setupProfilePage() {
+async function setupProfilePage() {
     const { profileContent } = getElements();
     if (!profileContent) return;
-    
-    const authModule = import('./auth.js');
-    authModule.then(({ auth, db, doc, getDoc, onAuthStateChanged }) => {
-        onAuthStateChanged(auth, user => {
-            if (user) {
-                const userDocRef = doc(db, "users", user.uid);
-                getDoc(userDocRef).then(docSnap => {
-                    if (docSnap.exists()) {
-                        const userData = docSnap.data();
-                        profileContent.innerHTML = `
-                            <div class="border-b border-slate-200 pb-4">
-                                <h3 class="text-lg font-medium text-slate-500">Full Name</h3>
-                                <p class="text-xl text-slate-900">${userData.name}</p>
-                            </div>
-                            <div class="border-b border-slate-200 pb-4">
-                                <h3 class="text-lg font-medium text-slate-500">Email</h3>
-                                <p class="text-xl text-slate-900">${userData.email}</p>
-                            </div>
-                            <div class="border-b border-slate-200 pb-4">
-                                <h3 class="text-lg font-medium text-slate-500">Pronouns</h3>
-                                <p class="text-xl text-slate-900">${userData.pronouns || 'Not specified'}</p>
-                            </div>
-                            <div class="border-b border-slate-200 pb-4">
-                                <h3 class="text-lg font-medium text-slate-500">Gender</h3>
-                                <p class="text-xl text-slate-900">${userData.gender}</p>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-medium text-slate-500">Interested In</h3>
-                                <p class="text-xl text-slate-900">${userData.seeking}</p>
-                            </div>
-                        `;
-                    } else {
-                        profileContent.innerHTML = `<p class="text-center">Could not find your profile data.</p>`;
-                    }
-                }).catch(error => {
-                    console.error("Error fetching user data:", error);
-                    profileContent.innerHTML = `<p class="text-center text-red-500">Error loading your profile.</p>`;
-                });
-            } else {
-                profileContent.innerHTML = `<p class="text-center">Please <a href="login.html" class="text-violet-600 font-bold">log in</a> to view your profile.</p>`;
+
+    supabaseClient.auth.onAuthStateChange(async (event, session) => {
+        if (session && session.user) {
+            const user = session.user;
+            const { data: userData, error } = await supabaseClient
+                .from('users')
+                .select('name, pronouns, gender, seeking')
+                .eq('id', user.id)
+                .single();
+
+            if (error) {
+                console.error("Error fetching user data:", error);
+                profileContent.innerHTML = `<p class="text-center text-red-500">Error loading your profile.</p>`;
+                return;
             }
-        });
+
+            if (userData) {
+                profileContent.innerHTML = `
+                    <div class="border-b border-slate-200 pb-4">
+                        <h3 class="text-lg font-medium text-slate-500">Full Name</h3>
+                        <p class="text-xl text-slate-900">${userData.name}</p>
+                    </div>
+                    <div class="border-b border-slate-200 pb-4">
+                        <h3 class="text-lg font-medium text-slate-500">Email</h3>
+                        <p class="text-xl text-slate-900">${user.email}</p>
+                    </div>
+                    <div class="border-b border-slate-200 pb-4">
+                        <h3 class="text-lg font-medium text-slate-500">Pronouns</h3>
+                        <p class="text-xl text-slate-900">${userData.pronouns || 'Not specified'}</p>
+                    </div>
+                    <div class="border-b border-slate-200 pb-4">
+                        <h3 class="text-lg font-medium text-slate-500">Gender</h3>
+                        <p class="text-xl text-slate-900">${userData.gender}</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-slate-500">Interested In</h3>
+                        <p class="text-xl text-slate-900">${userData.seeking}</p>
+                    </div>
+                `;
+            } else {
+                profileContent.innerHTML = `<p class="text-center">Could not find your profile data.</p>`;
+            }
+        } else {
+            profileContent.innerHTML = `<p class="text-center">Please <a href="login.html" class="text-violet-600 font-bold">log in</a> to view your profile.</p>`;
+        }
     });
 }
 
