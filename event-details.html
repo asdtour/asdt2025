@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-g">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Details - American Speed Dating Tour</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Lexend -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="text-slate-800 bg-slate-50">
 
-    <!-- Header -->
     <header id="main-header">
     <nav class="relative">
         <a href="index.html" class="flex items-center gap-2 z-10">
@@ -93,6 +89,8 @@
         
         <div class="flex items-center z-10">
             <div class="hidden md:flex items-center space-x-4">
+                <a href="login.html" id="login-link" class="text-lg font-semibold">Login</a>
+                <a href="signup.html" id="signup-link" class="animated-button signup-button" style="text-decoration: none;"><div class="bg"></div><div class="wrap"><div class="content"><span class="char state-1"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span><span class="char state-2"><span data-label="S" style="--i: 1">S</span><span data-label="i" style="--i: 2">i</span><span data-label="g" style="--i: 3">g</span><span data-label="n" style="--i: 4">n</span><span data-label="U" style="--i: 5">U</span><span data-label="p" style="--i: 6">p</span></span></div></div></a>
                 <div id="user-name-display" class="text-lg font-semibold hidden"></div>
                 <button id="sign-out-button" class="hidden bg-red-500 text-white px-4 py-2 rounded-full">Sign Out</button>
             </div>
@@ -108,25 +106,6 @@
     </nav>
 </header>
     
-    <div id="mobile-menu" class="mobile-menu-overlay">
-        <div class="mobile-menu-content">
-            <a href="events.html" class="mobile-menu-link">Events</a>
-            <a href="locations.html" class="mobile-menu-link">Locations</a>
-            <a href="about.html" class="mobile-menu-link">About Us</a>
-            <a href="services.html" class="mobile-menu-link">Services</a>
-            <a href="faq.html" class="mobile-menu-link">FAQ</a>
-            <a href="contact.html" class="mobile-menu-link">Contact Us</a>
-            
-            <div id="mobile-auth-links" class="mt-8 pt-8 border-t border-gray-700 flex flex-col items-center space-y-4">
-            </div>
-            
-            <div id="mobile-user-info" class="hidden mt-8 pt-8 border-t border-gray-700 flex flex-col items-center space-y-4">
-                <div id="mobile-user-name" class="text-white text-xl font-semibold"></div>
-                <button id="mobile-sign-out-button" class="bg-red-500 text-white px-8 py-3 rounded-full mt-4">Sign Out</button>
-            </div>
-        </div>
-    </div>
-    
 
     <main>
         <div class="py-24 bg-white">
@@ -136,7 +115,6 @@
                     <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Find our upcoming events with this theme in a city near you.</p>
                 </div>
 
-                <!-- Search Bar -->
                 <div class="mb-12 max-w-2xl mx-auto">
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -148,15 +126,12 @@
                     </div>
                 </div>
 
-                <!-- Event Grid -->
                 <div id="event-theme-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Events for this theme will be populated by JS -->
-                </div>
+                    </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8">
@@ -208,24 +183,55 @@
         </div>
     </footer>
 
-    <div id="icebreaker-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
-        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative modal-content">
-            <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <h3 class="text-2xl font-bold text-slate-900 mb-4">✨ AI Icebreakers</h3>
-            <div id="icebreaker-content">
+    <div id="pre-payment-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full relative modal-content">
+            <button id="close-modal-button" class="absolute top-4 right-4 text-slate-600 hover:text-slate-900 text-2xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Attendee Information</h3>
+            <p class="text-slate-600 mb-6">Please fill out your details to proceed.</p>
+            
+            <form id="pre-payment-form">
+                <input type="hidden" id="modal-event-id">
+                <input type="hidden" id="modal-stripe-link">
+                
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                    </div>
+                     <div>
+                        <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-slate-700">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="gender" class="block text-sm font-medium text-slate-700">Gender</label>
+                            <select id="gender" name="gender" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Non-binary</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="age" class="block text-sm font-medium text-slate-700">Age</label>
+                            <input type="number" id="age" name="age" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                        </div>
+                    </div>
                 </div>
-            <button id="regenerate-icebreakers-btn" class="mt-6 w-full cta-button bg-violet-600 text-white font-semibold px-5 py-3 rounded-lg hover:bg-violet-700">Get New Ideas</button>
+                
+                <button type="submit" id="proceed-to-payment-btn" class="mt-6 w-full cta-button bg-violet-600 text-white font-semibold px-5 py-3 rounded-lg hover:bg-violet-700 transition-colors duration-300">
+                    Proceed to Payment
+                </button>
+                <p id="modal-status" class="text-center text-sm mt-2"></p>
+            </form>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    
     <script src="auth.js"></script>
-
     <script src="script.js"></script>
 
 </body>
