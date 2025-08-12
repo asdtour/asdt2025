@@ -215,7 +215,6 @@ const cityStripeLinks = {
 ],
 
 };
-
 const eventTimes = {
     "Hiking Speed Date": ["8:00 AM - 10:30 AM", "12:00 PM - 2:00 PM"],
     "Mini Yoga & Mingle": ["8:45 AM - 10:30 AM", "4:30 PM - 6:30 PM"],
@@ -444,8 +443,9 @@ if (typeof cityData !== 'undefined' && cityData) {
             themeKeys.forEach((theme, themeIndex) => {
                 const eventId = eventIdCounter++;
                 let stripeLink = `https://buy.stripe.com/test_placeholder_for_event_${eventId}`;
-
-                if (cityStripeLinks[cityName]) {
+                
+                // This check is important because cityStripeLinks is no longer in this file
+                if (typeof cityStripeLinks !== 'undefined' && cityStripeLinks[cityName]) {
                     const linkIndex = cityLinkCounters[cityName];
                     stripeLink = cityStripeLinks[cityName][linkIndex] || stripeLink;
                     cityLinkCounters[cityName]++;
@@ -591,6 +591,7 @@ function displayEventsForCity(cityName) {
     renderEvents(cityEvents);
 }
 
+// CORRECTED RENDER EVENTS FUNCTION
 function renderEvents(eventsToRender, container) {
     const grid = container || getElements().eventGrid;
     if (!grid) return;
@@ -600,9 +601,9 @@ function renderEvents(eventsToRender, container) {
         return;
     }
     eventsToRender.forEach(event => {
-        const card = document.createElement('a');
-        card.href = event.stripeLink.startsWith('http') ? event.stripeLink : `purchase.html?eventId=${event.id}`;
+        const card = document.createElement('div');
         card.className = 'event-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col';
+        
         card.innerHTML = `
             <img src="${event.image}" alt="Event in ${event.city}" class="w-full h-48 object-cover flex-shrink-0" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
             <div class="p-6 flex flex-col flex-grow">
@@ -613,7 +614,12 @@ function renderEvents(eventsToRender, container) {
                     <p class="mt-2 text-slate-600"><span class="font-semibold">Event Type:</span> ${event.title}</p>
                 </div>
                 <div class="mt-auto pt-4">
-                     <div class="text-center bg-violet-600 text-white font-bold py-3 px-6 rounded-full w-full hover:bg-violet-700 transition-colors duration-300">Get Ticket</div>
+                     <button 
+                        class="get-ticket-button text-center bg-violet-600 text-white font-bold py-3 px-6 rounded-full w-full hover:bg-violet-700 transition-colors duration-300"
+                        data-event-id="${event.id}"
+                        data-stripe-link="${event.stripeLink}">
+                        Get Ticket
+                    </button>
                 </div>
             </div>
         `;
@@ -1140,4 +1146,97 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (error) {
         console.error("An error occurred during the dynamic setup of the page:", error);
     }
+    
+    // --- NEW MODAL LOGIC ---
+    const prePaymentModal = document.getElementById('pre-payment-modal');
+    const closeModalButton = document.getElementById('close-modal-button');
+    const prePaymentForm = document.getElementById('pre-payment-form');
+    
+    // Check if the form exists on the page before adding listeners
+    if(prePaymentForm) {
+        const modalEventId = document.getElementById('modal-event-id');
+        const modalStripeLink = document.getElementById('modal-stripe-link');
+        const modalStatus = document.getElementById('modal-status');
+        const proceedButton = document.getElementById('proceed-to-payment-btn');
+
+        // Function to open the modal
+        function openModal(eventId, stripeLink) {
+            modalEventId.value = eventId;
+            modalStripeLink.value = stripeLink;
+            prePaymentModal.classList.remove('hidden');
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            prePaymentModal.classList.add('hidden');
+            prePaymentForm.reset();
+            modalStatus.textContent = '';
+            proceedButton.disabled = false;
+            proceedButton.textContent = 'Proceed to Payment';
+        }
+
+        // Event listener to open modal when a "Get Ticket" button is clicked
+        document.body.addEventListener('click', function(e) {
+            if (e.target.classList.contains('get-ticket-button')) {
+                const eventId = e.target.dataset.eventId;
+                const stripeLink = e.target.dataset.stripeLink;
+                if (stripeLink && stripeLink.startsWith('http')) {
+                    openModal(eventId, stripeLink);
+                } else {
+                    alert('Ticket link is not available for this event yet.');
+                }
+            }
+        });
+
+        // Event listener for the close button
+        if (closeModalButton) {
+            closeModalButton.addEventListener('click', closeModal);
+        }
+
+        // Event listener for the form submission
+        prePaymentForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            proceedButton.disabled = true;
+            proceedButton.textContent = 'Processing...';
+            modalStatus.textContent = '';
+
+            // 1. Get data from the form
+            const formData = new FormData(prePaymentForm);
+            const attendeeData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone_number: formData.get('phone'),
+                gender: formData.get('gender'),
+                age: parseInt(formData.get('age')),
+                event_id: parseInt(modalEventId.value)
+            };
+            
+            // 2. Save data to Supabase
+            try {
+                // Check if supabaseClient is defined
+                if (typeof supabaseClient === 'undefined') {
+                    throw new Error("Supabase client is not initialized.");
+                }
+
+                const { error } = await supabaseClient
+                    .from('attendees')
+                    .insert([attendeeData]);
+
+                if (error) {
+                    throw error;
+                }
+
+                // 3. If successful, redirect to Stripe
+                modalStatus.textContent = 'Success! Redirecting to payment...';
+                window.location.href = modalStripeLink.value;
+
+            } catch (error) {
+                console.error('Error saving attendee info:', error);
+                modalStatus.textContent = `Error: ${error.message}`;
+                proceedButton.disabled = false;
+                proceedButton.textContent = 'Proceed to Payment';
+            }
+        });
+    }
+    // --- END OF NEW MODAL LOGIC ---
 });
