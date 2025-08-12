@@ -416,35 +416,28 @@ const cityImageUrls = {
     "Baltimore": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//Baltimore.jpg?width=400"
 };
 
-
-// NOTE: The cityData constant has been removed from this file.
-// It is now only defined in auth.js, which is loaded first.
-
-
 const themeKeys = Object.keys(themedEventDetails);
 let eventIdCounter = 1;
 const allEvents = [];
 const cityLinkCounters = {};
 
-const firstEventDates = [17, 18, 19]; 
-const secondEventDates = [24, 25, 26]; 
+const firstEventDates = [17, 18, 19];
+const secondEventDates = [24, 25, 26];
 const eventYear = 2025;
-const eventMonth = 9; 
+const eventMonth = 9;
 
-// This check ensures cityData exists before trying to use it.
 if (typeof cityData !== 'undefined' && cityData) {
     cityData.forEach(cityInfo => {
         const cityName = cityInfo.city;
         cityLinkCounters[cityName] = 0;
-
         const dateGroups = [firstEventDates, secondEventDates];
-
         dateGroups.forEach((dateGroup, weekIndex) => {
             themeKeys.forEach((theme, themeIndex) => {
                 const eventId = eventIdCounter++;
-                let stripeLink = `https://buy.stripe.com/test_placeholder_for_event_${eventId}`;
-                
-                // This check is important because cityStripeLinks is no longer in this file
+                let stripeLink = `https://example.com/ticket-placeholder-for-event-${eventId}`;
+
+                // This check allows the code to run without the cityStripeLinks object.
+                // It will use the placeholder link above.
                 if (typeof cityStripeLinks !== 'undefined' && cityStripeLinks[cityName]) {
                     const linkIndex = cityLinkCounters[cityName];
                     stripeLink = cityStripeLinks[cityName][linkIndex] || stripeLink;
@@ -454,17 +447,13 @@ if (typeof cityData !== 'undefined' && cityData) {
                 const eventDay = dateGroup[themeIndex % dateGroup.length];
                 const date = new Date(eventYear, eventMonth, eventDay);
                 const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-
                 const availableTimes = eventTimes[theme] || ["Time TBD"];
-                const timeSlot = weekIndex === 1 && availableTimes.length > 1 
-                               ? availableTimes[1] 
-                               : availableTimes[0];
-
+                const timeSlot = weekIndex === 1 && availableTimes.length > 1 ? availableTimes[1] : availableTimes[0];
                 allEvents.push({
                     id: eventId,
                     state: cityInfo.state,
                     city: cityInfo.city,
-                    date: `${formattedDate} (${timeSlot})`, 
+                    date: `${formattedDate} (${timeSlot})`,
                     venue: 'To be disclosed after purchase',
                     image: themedEventDetails[theme].image,
                     title: theme,
@@ -477,7 +466,6 @@ if (typeof cityData !== 'undefined' && cityData) {
 } else {
     console.error("cityData is not defined. Make sure auth.js is loaded correctly before script.js.");
 }
-
 
 const getElements = () => ({
     mainHeader: document.getElementById('main-header'),
@@ -521,9 +509,9 @@ const getElements = () => ({
 });
 
 async function handleAuthState() {
-    const { 
+    const {
         loginLink, signupLink, userNameDisplay, signOutButton,
-        mobileAuthLinks, mobileUserInfo, mobileUserName, mobileSignOutButton 
+        mobileAuthLinks, mobileUserInfo, mobileUserName, mobileSignOutButton
     } = getElements();
 
     supabaseClient.auth.onAuthStateChange(async (event, session) => {
@@ -538,8 +526,8 @@ async function handleAuthState() {
             const displayName = data?.name || 'User';
 
             userNameDisplay.textContent = `Welcome, ${displayName}`;
-            loginLink.classList.add('hidden');
-            signupLink.classList.add('hidden');
+            if(loginLink) loginLink.classList.add('hidden');
+            if(signupLink) signupLink.classList.add('hidden');
             userNameDisplay.classList.remove('hidden');
             signOutButton.classList.remove('hidden');
             signOutButton.addEventListener('click', signOut);
@@ -548,10 +536,10 @@ async function handleAuthState() {
             mobileAuthLinks.classList.add('hidden');
             mobileUserInfo.classList.remove('hidden');
             mobileSignOutButton.addEventListener('click', signOut);
-            
+
         } else {
-            loginLink.classList.remove('hidden');
-            signupLink.classList.remove('hidden');
+            if(loginLink) loginLink.classList.remove('hidden');
+            if(signupLink) signupLink.classList.remove('hidden');
             userNameDisplay.classList.add('hidden');
             signOutButton.classList.add('hidden');
 
@@ -591,7 +579,6 @@ function displayEventsForCity(cityName) {
     renderEvents(cityEvents);
 }
 
-// CORRECTED RENDER EVENTS FUNCTION
 function renderEvents(eventsToRender, container) {
     const grid = container || getElements().eventGrid;
     if (!grid) return;
@@ -682,7 +669,7 @@ function displayDefaultEvents() {
 }
 
 async function displayEventsByLocation() {
-    const { eventsHeading, eventsSubheading } = getElements();
+    const { eventsSubheading } = getElements();
 
     if (eventsSubheading) {
         eventsSubheading.textContent = 'Attempting to find events near you...';
@@ -1147,26 +1134,23 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("An error occurred during the dynamic setup of the page:", error);
     }
     
-    // --- NEW MODAL LOGIC ---
+    // --- UPDATED MODAL LOGIC ---
     const prePaymentModal = document.getElementById('pre-payment-modal');
     const closeModalButton = document.getElementById('close-modal-button');
     const prePaymentForm = document.getElementById('pre-payment-form');
     
-    // Check if the form exists on the page before adding listeners
     if(prePaymentForm) {
         const modalEventId = document.getElementById('modal-event-id');
         const modalStripeLink = document.getElementById('modal-stripe-link');
         const modalStatus = document.getElementById('modal-status');
         const proceedButton = document.getElementById('proceed-to-payment-btn');
 
-        // Function to open the modal
         function openModal(eventId, stripeLink) {
             modalEventId.value = eventId;
             modalStripeLink.value = stripeLink;
             prePaymentModal.classList.remove('hidden');
         }
 
-        // Function to close the modal
         function closeModal() {
             prePaymentModal.classList.add('hidden');
             prePaymentForm.reset();
@@ -1175,7 +1159,6 @@ document.addEventListener('DOMContentLoaded', () => {
             proceedButton.textContent = 'Proceed to Payment';
         }
 
-        // Event listener to open modal when a "Get Ticket" button is clicked
         document.body.addEventListener('click', function(e) {
             if (e.target.classList.contains('get-ticket-button')) {
                 const eventId = e.target.dataset.eventId;
@@ -1188,19 +1171,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Event listener for the close button
         if (closeModalButton) {
             closeModalButton.addEventListener('click', closeModal);
         }
 
-        // Event listener for the form submission
-        prePaymentForm.addEventListener('submit', async (e) => {
+        prePaymentForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            
             proceedButton.disabled = true;
-            proceedButton.textContent = 'Processing...';
-            modalStatus.textContent = '';
-
-            // 1. Get data from the form
+            proceedButton.textContent = 'Redirecting...';
+            
             const formData = new FormData(prePaymentForm);
             const attendeeData = {
                 name: formData.get('name'),
@@ -1208,35 +1188,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 phone_number: formData.get('phone'),
                 gender: formData.get('gender'),
                 age: parseInt(formData.get('age')),
+                seeking: formData.get('seeking'),
                 event_id: parseInt(modalEventId.value)
             };
-            
-            // 2. Save data to Supabase
-            try {
-                // Check if supabaseClient is defined
-                if (typeof supabaseClient === 'undefined') {
-                    throw new Error("Supabase client is not initialized.");
-                }
 
-                const { error } = await supabaseClient
-                    .from('attendees')
-                    .insert([attendeeData]);
+            supabaseClient
+                .from('attendees')
+                .insert([attendeeData])
+                .then(({ error }) => {
+                    if (error) {
+                        console.error('Supabase background save error:', error);
+                    }
+                });
 
-                if (error) {
-                    throw error;
-                }
-
-                // 3. If successful, redirect to Stripe
-                modalStatus.textContent = 'Success! Redirecting to payment...';
+            setTimeout(() => {
                 window.location.href = modalStripeLink.value;
-
-            } catch (error) {
-                console.error('Error saving attendee info:', error);
-                modalStatus.textContent = `Error: ${error.message}`;
-                proceedButton.disabled = false;
-                proceedButton.textContent = 'Proceed to Payment';
-            }
+            }, 250);
         });
     }
-    // --- END OF NEW MODAL LOGIC ---
 });
