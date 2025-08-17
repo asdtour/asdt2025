@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events in [City Name] - American Speed Dating Tour</title>
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Dynamic City-Specific Title (will be populated via JavaScript) -->
+    <title id="dynamic-title">Speed Dating Events in [City] | American Speed Dating Tour</title>
     
+    <!-- Primary Meta Tags -->
+    <meta name="description" id="dynamic-description" content="Find upcoming speed dating events in [City] with ASD Tour. Meet local singles at our fun, hosted events with guaranteed matches.">
+    <meta name="keywords" id="dynamic-keywords" content="speed dating [City], singles events [City], dating near me, meet singles [City], ASD Tour [City]">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" id="dynamic-url" content="https://americanspeeddatingtour.com/events/[city]">
+    <meta property="og:title" id="dynamic-og-title" content="Speed Dating Events in [City] | American Speed Dating Tour">
+    <meta property="og:description" id="dynamic-og-description" content="Join our speed dating events in [City] - meet compatible singles in person at our exclusive events.">
+    <meta property="og:image" content="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/smiley-woman-man-enjoying-time_11zon.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Happy couple meeting at an ASD Tour speed dating event in [City]">
+    <meta property="og:site_name" content="American Speed Dating Tour">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ASDTour">
+    <meta name="twitter:title" id="dynamic-twitter-title" content="Speed Dating Events in [City] | American Speed Dating Tour">
+    <meta name="twitter:description" id="dynamic-twitter-description" content="Find upcoming speed dating events in [City] with ASD Tour - meet local singles in person!">
+    <meta name="twitter:image" content="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/smiley-woman-man-enjoying-time_11zon.webp">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" id="dynamic-canonical" href="https://americanspeeddatingtour.com/events/[city]">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    
+    <!-- Fonts & Styling -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data (Will be populated via JavaScript) -->
+    <script type="application/ld+json" id="dynamic-schema">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventSeries",
+      "name": "American Speed Dating Tour Events in [City]",
+      "description": "Speed dating events for singles in [City]",
+      "url": "https://americanspeeddatingtour.com/events/[city]",
+      "image": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/smiley-woman-man-enjoying-time_11zon.webp",
+      "location": {
+        "@type": "Place",
+        "name": "[City], USA",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "[City]",
+          "addressRegion": "[State]",
+          "addressCountry": "US"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "American Speed Dating Tour",
+        "url": "https://americanspeeddatingtour.com"
+      }
+    }
+    </script>
+    
+    <!-- Geo Targeting -->
+    <meta name="geo.placename" id="dynamic-geo-placename" content="[City], [State]">
+    <meta name="geo.position" content="[LATITUDE];[LONGITUDE]">
+    <meta name="ICBM" content="[LATITUDE], [LONGITUDE]">
 </head>
+    
 <body class="text-slate-800 bg-slate-50">
 
     <header id="main-header">
