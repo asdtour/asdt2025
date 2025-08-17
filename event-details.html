@@ -1,17 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-g">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Details - American Speed Dating Tour</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Primary Meta Tags -->
+    <title>{{Event Theme}} Speed Dating in {{City}} | {{Date}} | American Speed Dating Tour</title>
+    <meta name="description" content="Join our {{Event Theme}} speed dating event in {{City}} on {{Date}} at {{Venue}}. Meet {{Age Range}} singles in a fun, curated experience. Only {{Spots Left}} spots left!">
+    <meta name="keywords" content="{{Event Theme}} speed dating {{City}}, singles event {{City}}, dating experience {{State}}, ASD Tour {{Theme}}, meet singles {{Venue}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="event">
+    <meta property="og:url" content="https://www.americanspeeddatingtour.com/event-details.htm">
+    <meta property="og:title" content="{{Event Theme}} Speed Dating in {{City}} | {{Date}}">
+    <meta property="og:description" content="Limited tickets: {{Event Theme}} event at {{Venue}} on {{Date}}. Our matching algorithm connects {{Age Range}} professionals in {{City}}.">
+    <meta property="og:image" content="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/{{event-image-slug}}.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Happy singles at {{Event Theme}} speed dating event in {{City}}">
+    <meta property="og:site_name" content="American Speed Dating Tour">
+    <meta property="event:start_time" content="{{ISO 8601 Date}}">
+    <meta property="event:end_time" content="{{ISO 8601 Date}}">
+    <meta property="event:location" content="{{Venue}}, {{City}}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ASDTour">
+    <meta name="twitter:title" content="🚀 {{Event Theme}} Speed Dating: {{City}} {{Date}}">
+    <meta name="twitter:description" content="{{SpotsLeft}} spots left! Join {{AgeRange}} singles at {{Venue}} for our curated {{EventTheme}} experience.">
+    <meta name="twitter:image" content="https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/{{event-image-slug}}-social.webp">
+    <meta name="twitter:label1" content="Date">
+    <meta name="twitter:data1" content="{{Date}}">
+    <meta name="twitter:label2" content="Location">
+    <meta name="twitter:data2" content="{{Venue}}, {{City}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.americanspeeddatingtour.com/event-details.htm">
+
+    <!-- Favicons (optimized) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#4f46e5">
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="/css/event.min.css" as="style">
+
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/css/event.min.css">
+
+    <!-- Event Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "{{Event Theme}} Speed Dating - {{City}}",
+      "description": "Curated {{Event Theme}} dating experience for {{Age Range}} at {{Venue}}",
+      "startDate": "{{ISO 8601 Start}}",
+      "endDate": "{{ISO 8601 End}}",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "{{Venue}}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{Street Address}}",
+          "addressLocality": "{{City}}",
+          "addressRegion": "{{State}}",
+          "postalCode": "{{ZIP}}",
+          "addressCountry": "US"
+        }
+      },
+      "image": [
+        "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/{{event-image-slug}}-schema.webp"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.americanspeeddatingtour.com/event-details.htm",
+        "price": "{{Price}}",
+        "priceCurrency": "USD",
+        "availability": "{{#if AlmostSoldOut}}LimitedAvailability{{else}}InStock{{/if}}",
+        "validFrom": "{{RegistrationOpenDate}}",
+        "inventoryLevel": "{{RemainingTickets}}"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "American Speed Dating Tour",
+        "url": "https://www.americanspeeddatingtour.com",
+        "logo": "https://www.americanspeeddatingtour.com/images/logo-schema.webp"
+      },
+      "performer": {
+        "@type": "PerformingGroup",
+        "name": "ASD Matchmakers"
+      }
+    }
+    </script>
 </head>
 <body class="text-slate-800 bg-slate-50">
 
