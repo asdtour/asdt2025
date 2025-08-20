@@ -217,6 +217,10 @@ const cityStripeLinks = {
     "https://buy.stripe.com/14A28r5paeGY4W5bE30oP1c","https://buy.stripe.com/14AdR9bNy42k0FPeQf0oP1d", "https://buy.stripe.com/bJe4gz6teaqI4W5bE30oP1j", "https://buy.stripe.com/8x25kD2cYdCUdsBgYn0oP1e", "https://buy.stripe.com/14AeVdeZK0Q89cl23t0oP1f", "https://buy.stripe.com/4gM9ATcRC2YggEN6jJ0oP1g", "https://buy.stripe.com/cNidR918UeGY4W5fUj0oP1h", "https://buy.stripe.com/fZu7sLg3OeGY6095fF0oP1i",
     "https://buy.stripe.com/14A28r5paeGY4W5bE30oP1c","https://buy.stripe.com/14AdR9bNy42k0FPeQf0oP1d", "https://buy.stripe.com/bJe4gz6teaqI4W5bE30oP1j", "https://buy.stripe.com/8x25kD2cYdCUdsBgYn0oP1e", "https://buy.stripe.com/14AeVdeZK0Q89cl23t0oP1f", "https://buy.stripe.com/4gM9ATcRC2YggEN6jJ0oP1g", "https://buy.stripe.com/cNidR918UeGY4W5fUj0oP1h", "https://buy.stripe.com/fZu7sLg3OeGY6095fF0oP1i",
 ],
+    "New Haven": [
+    "https://buy.stripe.com/8x2fZhaJueGYdsBbE30oP1k", "https://buy.stripe.com/aFa14nbNyfL22NXbE30oP1l", "https://buy.stripe.com/bJecN54l656oewFdMb0oP1m", "https://buy.stripe.com/5kQfZh9FqbuMfAJ37x0oP1n", "https://buy.stripe.com/14AeVdeZK7ewbktbE30oP1o", "https://buy.stripe.com/bJe14ncRC9mEbktbE30oP1p", "https://buy.stripe.com/00w4gzeZK9mEbkt0Zp0oP1r", "https://buy.stripe.com/bJe3cvcRC7ewewFcI70oP1q",
+    "https://buy.stripe.com/8x2fZhaJueGYdsBbE30oP1k", "https://buy.stripe.com/aFa14nbNyfL22NXbE30oP1l", "https://buy.stripe.com/bJecN54l656oewFdMb0oP1m", "https://buy.stripe.com/5kQfZh9FqbuMfAJ37x0oP1n", "https://buy.stripe.com/14AeVdeZK7ewbktbE30oP1o", "https://buy.stripe.com/bJe14ncRC9mEbktbE30oP1p", "https://buy.stripe.com/00w4gzeZK9mEbkt0Zp0oP1r", "https://buy.stripe.com/bJe3cvcRC7ewewFcI70oP1q"
+],
 
 };
 const eventTimes = {
