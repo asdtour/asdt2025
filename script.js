@@ -213,6 +213,10 @@ const cityStripeLinks = {
     "https://buy.stripe.com/4gM9ATaJu1Uc2NXfUj0oO3c", "https://buy.stripe.com/28E7sLg3OeGY0FP5fF0oO3d", "https://buy.stripe.com/3cI28r7xi2YgcoxbE30oO3h", "https://buy.stripe.com/3cI7sL4l6aqI0FP0Zp0oO29", "https://buy.stripe.com/28EcN5g3O2YgdsB7nN0oO2a", "https://buy.stripe.com/8x228r6teeGYagpazZ0oO2b", "https://buy.stripe.com/bJedR92cYcyQ6090Zp0oO2c", "https://buy.stripe.com/7sY8wP3h28iA9cl37x0oO2d",
     "https://buy.stripe.com/3cI4gz3h26asagpdMb0oO3f", "https://buy.stripe.com/14AcN58Bm42kdsB7nN0oO3g", "https://buy.stripe.com/3cI28r7xi2YgcoxbE30oO3h", "https://buy.stripe.com/28E3cv8BmaqI2NXdMb0oO24", "https://buy.stripe.com/7sY3cv4l67ewgENfUj0oO25", "https://buy.stripe.com/bJe00jeZKcyQ88hdMb0oO26", "https://buy.stripe.com/28EeVd2cY2Yg88hgYn0oO27", "https://buy.stripe.com/9B68wPcRCgP60FP7nN0oO28"
 ],
+    "Pittsburgh": [
+    "https://buy.stripe.com/14A28r5paeGY4W5bE30oP1c","https://buy.stripe.com/14AdR9bNy42k0FPeQf0oP1d", "https://buy.stripe.com/bJe4gz6teaqI4W5bE30oP1j", "https://buy.stripe.com/8x25kD2cYdCUdsBgYn0oP1e", "https://buy.stripe.com/14AeVdeZK0Q89cl23t0oP1f", "https://buy.stripe.com/4gM9ATcRC2YggEN6jJ0oP1g", "https://buy.stripe.com/cNidR918UeGY4W5fUj0oP1h", "https://buy.stripe.com/fZu7sLg3OeGY6095fF0oP1i",
+    "https://buy.stripe.com/14A28r5paeGY4W5bE30oP1c","https://buy.stripe.com/14AdR9bNy42k0FPeQf0oP1d", "https://buy.stripe.com/bJe4gz6teaqI4W5bE30oP1j", "https://buy.stripe.com/8x25kD2cYdCUdsBgYn0oP1e", "https://buy.stripe.com/14AeVdeZK0Q89cl23t0oP1f", "https://buy.stripe.com/4gM9ATcRC2YggEN6jJ0oP1g", "https://buy.stripe.com/cNidR918UeGY4W5fUj0oP1h", "https://buy.stripe.com/fZu7sLg3OeGY6095fF0oP1i",
+],
 
 };
 const eventTimes = {
