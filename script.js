@@ -1,8 +1,8 @@
 // --- DATA ---
 const cityStripeLinks = {
     "Houston": [
-    "https://buy.stripe.com/eVqfZh3h2cyQ1JTbE30oP19", "https://buy.stripe.com/6oUaEX04QeGY9cl9vV0oP1a", "https://buy.stripe.com/4gM28r3h242k74dfUj0oP1b", "https://buy.stripe.com/3cI8wPeZKeGY6097nN0oM04", "https://buy.stripe.com/6oU3cvdVGdCU3S1dMb0oM05", "https://buy.stripe.com/dRm7sL2cY2Yg4W50Zp0oM06", "https://buy.stripe.com/14A7sL2cYbuMgENdMb0oM07", "https://buy.stripe.com/eVq6oH9Fq7ew1JT23t0oM08",
-    "https://buy.stripe.com/28E8wP7xi6as0FP9vV0oP18", "https://buy.stripe.com/8x214n2cY6as1JTgYn0oM0a", "https://buy.stripe.com/cNi28r7xi9mE2NXazZ0oM0b", "https://buy.stripe.com/9B69AT7xifL20FPcI70oM0c", "https://buy.stripe.com/00w14nbNy2Yg1JTbE30oM0d", "https://buy.stripe.com/4gM9AT5padCU0FP0Zp0oM0e", "https://buy.stripe.com/3cI5kD3h27ew1JTeQf0oM0f", "https://buy.stripe.com/9B6bJ104Q6as9cl9vV0oM0g"
+    "https://square.link/u/2By0tWs5", "https://buy.stripe.com/6oUaEX04QeGY9cl9vV0oP1a", "https://buy.stripe.com/4gM28r3h242k74dfUj0oP1b", "https://buy.stripe.com/3cI8wPeZKeGY6097nN0oM04", "https://buy.stripe.com/6oU3cvdVGdCU3S1dMb0oM05", "https://buy.stripe.com/dRm7sL2cY2Yg4W50Zp0oM06", "https://buy.stripe.com/14A7sL2cYbuMgENdMb0oM07", "https://buy.stripe.com/eVq6oH9Fq7ew1JT23t0oM08",
+    "https://square.link/u/2By0tWs5", "https://buy.stripe.com/8x214n2cY6as1JTgYn0oM0a", "https://buy.stripe.com/cNi28r7xi9mE2NXazZ0oM0b", "https://buy.stripe.com/9B69AT7xifL20FPcI70oM0c", "https://buy.stripe.com/00w14nbNy2Yg1JTbE30oM0d", "https://buy.stripe.com/4gM9AT5padCU0FP0Zp0oM0e", "https://buy.stripe.com/3cI5kD3h27ew1JTeQf0oM0f", "https://buy.stripe.com/9B6bJ104Q6as9cl9vV0oM0g"
 ],
 
     "San Antonio": [
