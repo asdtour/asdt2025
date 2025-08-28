@@ -107,20 +107,20 @@ const cityStripeLinks = {
     "https://square.link/u/FFI038j4", "https://square.link/u/cNuett94", "https://square.link/u/Pd04sSjN", "https://square.link/u/yTmUkq6A", "https://square.link/u/cdtWH7PB", "https://square.link/u/IIp9N49S", "https://square.link/u/XHAQpMJd", "https://square.link/u/MqHoMRNh"
     ],
     "Chicago": [
-    "https://square.link/u/KOhgOu93", "https://square.link/u/2uXkj9O5", "https://square.link/u/BKtgEAod", "https://square.link/u/xwRpZChn", "https://square.link/u/2bcaUCxx", "https://buy.stripe.com/7sY5kD9Fq7ewfAJ37x0oM3C", "https://buy.stripe.com/14A3cv7xi6asagp4bB0oM3A", "https://buy.stripe.com/5kQ00j04QfL29clazZ0oM3x",
-    "https://square.link/u/KOhgOu93", "https://square.link/u/2uXkj9O5", "https://square.link/u/BKtgEAod", "https://square.link/u/xwRpZChn", "https://square.link/u/2bcaUCxx", "https://buy.stripe.com/5kQbJ19FqaqIfAJgYn0oM3B", "https://buy.stripe.com/aFa6oH4l656ocoxfUj0oM3z", "https://buy.stripe.com/7sY5kDg3ObuM88h37x0oM3y"
+    "https://square.link/u/KOhgOu93", "https://square.link/u/2uXkj9O5", "https://square.link/u/BKtgEAod", "https://square.link/u/xwRpZChn", "https://square.link/u/2bcaUCxx", "https://square.link/u/PgHp6iwp", "https://square.link/u/VHdUEWrw", "https://square.link/u/Bv2nuWwv",
+    "https://square.link/u/KOhgOu93", "https://square.link/u/2uXkj9O5", "https://square.link/u/BKtgEAod", "https://square.link/u/xwRpZChn", "https://square.link/u/2bcaUCxx", "https://square.link/u/PgHp6iwp", "https://square.link/u/VHdUEWrw", "https://square.link/u/Bv2nuWwv"
     ],
     "Phoenix": [
-    "https://square.link/u/f4j6ILqh", "https://square.link/u/8RyedXkI", "https://square.link/u/GsUnn5Jb", "https://square.link/u/C3tt5rAZ", "https://square.link/u/9lhcISwi", "https://buy.stripe.com/dRm5kDg3O1Uc3S1gYn0oM32", "https://buy.stripe.com/4gMbJ1cRC9mE0FP8rR0oM33", "https://buy.stripe.com/bJebJ1aJu0Q82NXeQf0oM34",
-    "https://square.link/u/f4j6ILqh", "https://square.link/u/8RyedXkI", "https://square.link/u/GsUnn5Jb", "https://square.link/u/C3tt5rAZ", "https://square.link/u/9lhcISwi", "https://buy.stripe.com/eVq28rdVG8iAagp23t0oM3a", "https://buy.stripe.com/4gMcN5aJueGYdsB9vV0oM3b", "https://buy.stripe.com/aFacN55pabuM4W58rR0oM3c"
+    "https://square.link/u/f4j6ILqh", "https://square.link/u/8RyedXkI", "https://square.link/u/GsUnn5Jb", "https://square.link/u/C3tt5rAZ", "https://square.link/u/9lhcISwi", "https://square.link/u/GCAg6b2o", "https://square.link/u/2XC3npgB", "https://square.link/u/TzTZc5zK",
+    "https://square.link/u/f4j6ILqh", "https://square.link/u/8RyedXkI", "https://square.link/u/GsUnn5Jb", "https://square.link/u/C3tt5rAZ", "https://square.link/u/9lhcISwi", "https://square.link/u/GCAg6b2o", "https://square.link/u/2XC3npgB", "https://square.link/u/TzTZc5zK"
     ],
     "Philadelphia": [
-    "https://square.link/u/snwhMv7C", "https://square.link/u/FCM6w9cw", "https://square.link/u/G8DV3SpD", "https://square.link/u/cr1rNkbq", "https://square.link/u/MRRe8WMZ", "https://buy.stripe.com/eVq14n3h2fL2agp5fF0oM3i", "https://buy.stripe.com/14AbJ13h256o2NX37x0oM3j", "https://buy.stripe.com/eVq14naJu9mE1JT23t0oM3k",
-    "https://square.link/u/snwhMv7C", "https://square.link/u/FCM6w9cw", "https://square.link/u/G8DV3SpD", "https://square.link/u/cr1rNkbq", "https://square.link/u/MRRe8WMZ", "https://buy.stripe.com/8x200jeZKdCU4W58rR0oM3q", "https://buy.stripe.com/4gM6oH18U9mEagp5fF0oM3r", "https://buy.stripe.com/aFa5kD2cY9mEagp8rR0oM3s"
+    "https://square.link/u/snwhMv7C", "https://square.link/u/FCM6w9cw", "https://square.link/u/G8DV3SpD", "https://square.link/u/cr1rNkbq", "https://square.link/u/MRRe8WMZ", "https://square.link/u/dqGn2mMg", "https://square.link/u/45MN9UVy", "https://square.link/u/6PlTS5TF",
+    "https://square.link/u/snwhMv7C", "https://square.link/u/FCM6w9cw", "https://square.link/u/G8DV3SpD", "https://square.link/u/cr1rNkbq", "https://square.link/u/MRRe8WMZ", "https://square.link/u/dqGn2mMg", "https://square.link/u/45MN9UVy", "https://square.link/u/6PlTS5TF"
     ],
     "Miami": [
-    "https://square.link/u/2NdTYOiw", "https://square.link/u/b1nvrjv0", "https://square.link/u/bcqMl8LZ", "https://buy.stripe.com/4gM6oH9Fq56o2NXbE30oM3N", "https://buy.stripe.com/6oUbJ14l6dCUbkteQf0oM3M", "https://buy.stripe.com/bJe5kDg3O0Q8ewFbE30oM3L", "https://buy.stripe.com/14AbJ1bNy8iA4W5dMb0oM3K", "https://buy.stripe.com/eVqcN5eZK56o88hdMb0oM3J",
-    "https://square.link/u/2NdTYOiw", "https://square.link/u/b1nvrjv0", "https://square.link/u/bcqMl8LZ", "https://buy.stripe.com/00waEX4l656obkt9vV0oM3X", "https://buy.stripe.com/00w28r7xi9mEbkt0Zp0oM3Y", "https://buy.stripe.com/7sYaEX2cYeGY0FP4bB0oM3T", "https://buy.stripe.com/cNi7sL04QgP64W537x0oM3S", "https://buy.stripe.com/cNieVd2cYgP688hbE30oM3R"
+    "https://square.link/u/2NdTYOiw", "https://square.link/u/b1nvrjv0", "https://square.link/u/bcqMl8LZ", "https://square.link/u/qewaa9Fv", "https://square.link/u/jrbYljM3", "https://square.link/u/hOFMaC6r", "https://square.link/u/6B21v6BQ", "https://square.link/u/SAW6Hl5h",
+    "https://square.link/u/2NdTYOiw", "https://square.link/u/b1nvrjv0", "https://square.link/u/bcqMl8LZ", "https://square.link/u/qewaa9Fv", "https://square.link/u/jrbYljM3", "https://square.link/u/hOFMaC6r", "https://square.link/u/6B21v6BQ", "https://square.link/u/SAW6Hl5h"
  ],
  "Worcester": [
     "https://square.link/u/P1Yp36En", "https://square.link/u/YdQfjJyY", "https://square.link/u/n0YG0QZb", "https://buy.stripe.com/9B6aEX6tedCUcox37x0oO2y", "https://buy.stripe.com/9B6bJ14l67ew0FPdMb0oO2z", "https://buy.stripe.com/fZucN518U6as6097nN0oO2A", "https://buy.stripe.com/7sYaEXaJu0Q8fAJgYn0oO2B", "https://buy.stripe.com/cNi5kDeZK8iA4W5eQf0oO2C",
