@@ -373,8 +373,8 @@ const cityImageUrls = {
     "Phoenix": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//pheonix.jpg?width=400",
     "Philadelphia": "https://wsrv.nl/?url=https://images.pexels.com/photos/2362030/pexels-photo-2362030.jpeg&w=400&h=400&fit=cover&q=80&output=webp",
     "Pittsburgh": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/pittsburg.jpg",
-    "New Haven": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/New%20Haven.jpeg?width=400",
-    "Oakland": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/oakland.jpg?width=400",,
+    "New Haven": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/New%20Haven.jpeg",
+    "Oakland": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/oakland.jpg",
 
     // Florida
     "Miami": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//miami.jpg?width=400",
