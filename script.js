@@ -1,8 +1,8 @@
 // --- DATA ---
 const cityStripeLinks = {
      "Houston": [
-    "https://square.link/u/2By0tWs5", "https://square.link/u/2WQRg7Px", "https://square.link/u/XNsop8jV", "https://square.link/u/ZLeGO0DS",  "https://square.link/u/MXc0BDGu", "https://square.link/u/vyfOIzOh", "https://square.link/u/4eTrELJq", "https://square.link/u/3VQysuov",
-    "https://square.link/u/2By0tWs5", "https://square.link/u/2WQRg7Px", "https://square.link/u/XNsop8jV",  "https://square.link/u/ZLeGO0DS", "https://square.link/u/MXc0BDGu", "https://square.link/u/vyfOIzOh", "https://square.link/u/4eTrELJq", "https://square.link/u/3VQysuov"
+    "https://square.link/u/dFFZWgCS", "https://square.link/u/2WQRg7Px", "https://square.link/u/XNsop8jV", "https://square.link/u/ZLeGO0DS",  "https://square.link/u/MXc0BDGu", "https://square.link/u/vyfOIzOh", "https://square.link/u/4eTrELJq", "https://square.link/u/3VQysuov",
+    "https://square.link/u/dFFZWgCS", "https://square.link/u/2WQRg7Px", "https://square.link/u/XNsop8jV",  "https://square.link/u/ZLeGO0DS", "https://square.link/u/MXc0BDGu", "https://square.link/u/vyfOIzOh", "https://square.link/u/4eTrELJq", "https://square.link/u/3VQysuov"
 ],
     "San Antonio": [
     "https://square.link/u/s8GrXiMw", "https://square.link/u/vPasADYO", "https://square.link/u/zL3D9tSN", "https://square.link/u/cEdZIqS6", "https://square.link/u/g5E6OIE5", "https://square.link/u/I8j2ifiC", "https://square.link/u/co55Jya2", "https://square.link/u/HpaSueWn",
@@ -211,12 +211,12 @@ const cityStripeLinks = {
     "https://square.link/u/UPWkNCuh", "https://square.link/u/xEY1n1Z5", "https://square.link/u/T3F1vObZ", "https://square.link/u/UnZhm7We", "https://square.link/u/8MIcxhHy", "https://square.link/u/MJJapgOR", "https://square.link/u/rDfpl7Qf", "https://square.link/u/qMsyCYlC"
 ],
     "Pittsburgh": [
-    "https://square.link/u/IVVwi4Ly","https://square.link/u/Xg4NI05g", "https://square.link/u/LdO7oJXX", "https://square.link/u/XrOWXHsL", "https://square.link/u/ZLkTD7LN", "https://square.link/u/xoBC674F", "https://square.link/u/YuEahn53", "https://square.link/u/6jeJMFRu",
-    "https://square.link/u/IVVwi4Ly","https://square.link/u/Xg4NI05g", "https://square.link/u/LdO7oJXX", "https://square.link/u/XrOWXHsL", "https://square.link/u/ZLkTD7LN", "https://square.link/u/xoBC674F", "https://square.link/u/YuEahn53", "https://square.link/u/6jeJMFRu",
+    "https://square.link/u/FVR9blUz","https://square.link/u/Xg4NI05g", "https://square.link/u/LdO7oJXX", "https://square.link/u/XrOWXHsL", "https://square.link/u/ZLkTD7LN", "https://square.link/u/xoBC674F", "https://square.link/u/YuEahn53", "https://square.link/u/6jeJMFRu",
+    "https://square.link/u/FVR9blUz","https://square.link/u/Xg4NI05g", "https://square.link/u/LdO7oJXX", "https://square.link/u/XrOWXHsL", "https://square.link/u/ZLkTD7LN", "https://square.link/u/xoBC674F", "https://square.link/u/YuEahn53", "https://square.link/u/6jeJMFRu",
 ],
     "New Haven": [
-    "https://square.link/u/xGm5YOKs", "https://square.link/u/BJhqoN2T", "https://square.link/u/YGy9GGpP", "https://square.link/u/gdQ8YsAl", "https://square.link/u/A2FMNPGk", "https://square.link/u/OcNde4KD", "https://square.link/u/8HUTBzBO", "https://square.link/u/OxrzQIFO",
-    "https://square.link/u/xGm5YOKs", "https://square.link/u/BJhqoN2T", "https://square.link/u/YGy9GGpP", "https://square.link/u/gdQ8YsAl", "https://square.link/u/A2FMNPGk", "https://square.link/u/OcNde4KD", "https://square.link/u/8HUTBzBO", "https://square.link/u/OxrzQIFO"
+    "https://square.link/u/7GDGHNWd", "https://square.link/u/BJhqoN2T", "https://square.link/u/YGy9GGpP", "https://square.link/u/gdQ8YsAl", "https://square.link/u/A2FMNPGk", "https://square.link/u/OcNde4KD", "https://square.link/u/8HUTBzBO", "https://square.link/u/OxrzQIFO",
+    "https://square.link/u/7GDGHNWd", "https://square.link/u/BJhqoN2T", "https://square.link/u/YGy9GGpP", "https://square.link/u/gdQ8YsAl", "https://square.link/u/A2FMNPGk", "https://square.link/u/OcNde4KD", "https://square.link/u/8HUTBzBO", "https://square.link/u/OxrzQIFO"
 ],
 
 }; 
