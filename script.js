@@ -375,6 +375,7 @@ const cityImageUrls = {
     "Pittsburgh": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/pittsburg.jpg",
     "New Haven": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/New%20Haven.jpeg",
     "Oakland": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/oakland.jpg",
+    "Erie": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/oakland.jpg",
 
     // Florida
     "Miami": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//miami.jpg?width=400",
