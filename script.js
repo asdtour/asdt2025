@@ -21,6 +21,10 @@ const cityStripeLinks = {
     "https://square.link/u/nLnc4X2z", "https://square.link/u/VCkWFu20", "https://square.link/u/uytXfaTD", "https://square.link/u/LHJQjFOJ",  "https://square.link/u/759Svigl", "https://square.link/u/QArGVBBP", "https://square.link/u/QTuem7Yl", "https://square.link/u/Zw5iYjjZ",
     "https://square.link/u/nLnc4X2z", "https://square.link/u/VCkWFu20", "https://square.link/u/uytXfaTD", "https://square.link/u/LHJQjFOJ",  "https://square.link/u/759Svigl", "https://square.link/u/QArGVBBP", "https://square.link/u/QTuem7Yl", "https://square.link/u/Zw5iYjjZ"
 ],
+    "Erie": [
+    "https://square.link/u/oX91gMYn", "https://square.link/u/KmOyN9Nk", "https://square.link/u/Fg3OvMCa", "https://square.link/u/hFCkllnf",  "https://square.link/u/BN3omAyT", "https://square.link/u/iNlRvF7s", "https://square.link/u/OlxxWZaL", "https://square.link/u/rngAmDP0",
+    "https://square.link/u/oX91gMYn", "https://square.link/u/KmOyN9Nk", "https://square.link/u/Fg3OvMCa", "https://square.link/u/hFCkllnf",  "https://square.link/u/BN3omAyT", "https://square.link/u/iNlRvF7s", "https://square.link/u/OlxxWZaL", "https://square.link/u/rngAmDP0"
+],
 "Lexington-Fayette": [
     "https://square.link/u/IC0arZiC", "https://square.link/u/VWX6dBWj", "https://square.link/u/e714j6TZ", "https://square.link/u/8cDFOBBL", "https://square.link/u/RWGBzsX5", "https://square.link/u/e3HIyADL", "https://square.link/u/S4Hf2WMt", "https://square.link/u/3WCazRkf",
     "https://square.link/u/IC0arZiC", "https://square.link/u/VWX6dBWj", "https://square.link/u/e714j6TZ", "https://square.link/u/8cDFOBBL", "https://square.link/u/RWGBzsX5", "https://square.link/u/e3HIyADL", "https://square.link/u/S4Hf2WMt", "https://square.link/u/3WCazRkf"
@@ -375,7 +379,7 @@ const cityImageUrls = {
     "Pittsburgh": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/pittsburg.jpg",
     "New Haven": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/New%20Haven.jpeg",
     "Oakland": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/oakland.jpg",
-    "Erie": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/oakland.jpg",
+    "Erie": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media/Erie.jpg",
 
     // Florida
     "Miami": "https://cqnkvymjarfjhccykkun.supabase.co/storage/v1/object/public/media//miami.jpg?width=400",
