@@ -23,6 +23,7 @@ const cityData = [
     { state: 'Pennsylvania', city: 'Pittsburgh' },
 { state: 'Connecticut', city: 'New Haven' },
 { state: 'California', city: 'Oakland' },
+    { state: 'Pennsylvania', city: 'Erie' },
     { state: 'New Jersey', city: 'Newark' }, { state: 'New Jersey', city: 'Jersey City' },
     { state: 'New Jersey', city: 'Paterson' }, { state: 'Georgia', city: 'Atlanta' },
     { state: 'Ohio', city: 'Columbus' }, { state: 'Massachusetts', city: 'Boston' },
